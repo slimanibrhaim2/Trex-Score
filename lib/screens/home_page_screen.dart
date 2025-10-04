@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:trexv1/screens/settings_screen.dart';
 import 'package:trexv1/services/theme/theme_provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomeScreen extends StatelessWidget{
   const HomeScreen({super.key});
@@ -11,14 +12,11 @@ class HomeScreen extends StatelessWidget{
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProvider>(context);
     final isDark = themeProvider.themeMode == ThemeMode.dark;
+    final l10n = AppLocalizations.of(context)!;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-            'Trex Score',
-            style: TextStyle(
-              // color: Colors.white,
-            ),
-        ),
+        title: Text(l10n.appTitle),
         actions: [
           Padding(
             padding: const EdgeInsets.all(10),
@@ -48,7 +46,7 @@ class HomeScreen extends StatelessWidget{
         floatingActionButton: FloatingActionButton.extended(onPressed: (){
     },
           label: Text(
-            'start a new game',
+            l10n.startGameButton,
             style: TextStyle(
               fontWeight: FontWeight.bold,
             ),

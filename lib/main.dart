@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:trexv1/services/theme/theme_provider.dart';
 import 'package:trexv1/services/theme/themes_settings.dart';
 import 'screens/home_page_screen.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 void main(){
   runApp(
@@ -24,6 +27,22 @@ class MyApp extends StatelessWidget{
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: themeProvider.themeMode,
+
+      // 1. Define supported languages
+      supportedLocales: const [
+        Locale('en', ''),
+        Locale('ar', ''),
+      ],
+
+      // 2. Add localizations delegates
+      localizationsDelegates: const [
+        AppLocalizations.delegate, // 👈 Your custom strings
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+
+
       home: const HomeScreen(),
     );
   }

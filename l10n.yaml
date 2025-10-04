@@ -1,0 +1,7 @@
+# l10n.yaml
+
+arb-dir: lib/l10n           # 👈 Directory where your .arb files will live
+template-arb-file: app_en.arb # 👈 The template file (English in this case)
+output-localization-file: app_localizations.dart # 👈 The output class name
+output-dir: lib/l10n               #Force output to the same folder
+untranslated-messages-file: untranslated.txt
