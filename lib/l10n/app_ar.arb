@@ -1,14 +1,15 @@
 {
   "@@locale": "ar",
   "appTitle": "مسجل تركس",
-  "startGameButton": "ابدأ لعبة جديدة",
 
+  "startGameButton": "ابدأ لعبة جديدة",
+  "chooseGameTitle": "اختر اللعبة التي تريد أن تلعبها:",
+  "gameTrexSingle": "تركس فردي",
+  "gameTrexPartners": "تركس شراكة",
 
   "settingsTitle": "الإعدادات",
-
   "themeTitle": "الوضع الليلي",
   "themeSubtitle": "قم بالتبديل لتشغيل و إيقاف الوضع الليلي.",
-
   "languageTitle": "اللغة",
   "languageSubtitle": "قم بالتبديل لتبديل لغة التطبيق."
 }
