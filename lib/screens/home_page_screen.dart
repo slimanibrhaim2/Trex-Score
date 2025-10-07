@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget{
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(right: 20.0),
+            padding: const EdgeInsets.all(10.0),
             child: IconButton(
               onPressed: (){
                 Navigator.of(context).push(

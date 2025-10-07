@@ -1,7 +1,16 @@
 {
   "@@locale": "en",
-  "appTitle": "Trex Score",
+  "appTitle": "Trex Scorekeeper",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
   "startGameButton": "Start a new game",
+
   "settingsTitle": "Settings",
-  "themeToggleSubtitle": "Toggle here to switch the application theme."
+
+  "themeTitle": "Dark Mode",
+  "themeSubtitle": "Toggle to enable or disable Dark Mode.",
+
+  "languageTitle": "Language",
+  "languageSubtitle": "Toggle to switch the application language."
 }
